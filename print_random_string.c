@@ -1,9 +1,8 @@
-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
+void rand_string(char *str, size_t size);
 
 
 // random string generator wrapper function
@@ -29,7 +28,7 @@ int main()
 
 	printf("Today's random word: ");
     str = rand_string_alloc(size );
-    printf("%s",str);
+    printf("%s\n",str);
     free (str);
     
 
